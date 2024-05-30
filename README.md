@@ -24,6 +24,7 @@ This script checks for Discord Nitro gift codes and saves valid ones in the `dat
 
 ### Credits
 Made By: @0xnyxo
+Discord: 0xnyxo.
 
 ### Changelog
 - **28/05/2024**: Project created
