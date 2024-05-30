@@ -1,2 +1,7 @@
-# Discord-Gift-Checker
-This script automates the process of generating and validating Discord Nitro gift codes. It generates random codes, checks their validity by making HTTP requests to Discord's API, and logs the results.
+# Discord Gift Checker for Nitro
+
+This script checks for Discord Nitro gift codes and saves valid ones in the `data\valid.txt` file.
+
+## Credits
+
+- Made By: @0xnyxo
