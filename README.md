@@ -5,7 +5,7 @@
   </a>
   </kbd>
   
-  <h2 align="center">Discord Gift Checker for Nitro</h2>
+  <h2 align="center">Discord Nitro Checker</h2>
   <p align="center">
     A tool to generate and check the validity of Discord Nitro gift codes.
     <br />
