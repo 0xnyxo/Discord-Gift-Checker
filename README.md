@@ -1,7 +1,7 @@
 <div align="center">
   <kbd>
   <a href="https://github.com/0xnyxo/Discord-Gift-Checker">
-    <img src="https://raw.githubusercontent.com/0xnyxo/Discord-Gift-Checker/main/assets/image.png" alt="Logo" style="width: 110%; height: 110%;">
+    <img src="https://raw.githubusercontent.com/0xnyxo/Discord-Gift-Checker/main/assets/images/image.png" alt="Logo" style="width: 110%; height: 110%;">
   </a>
   </kbd>
   
