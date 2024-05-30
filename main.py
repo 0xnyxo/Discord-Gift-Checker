@@ -4,6 +4,8 @@ import requests
 import os
 import platform
 import concurrent.futures
+import threading
+import time
 
 
 xCookie = ""
@@ -76,6 +78,13 @@ class FileHandler:
         return codes
 
 
+def updateCounter():
+    global checked_count
+    while True:
+        TerminalTitleSetter.set_title(f"@0xnyxo Nitro | Checked: {checked_count}")
+        time.sleep(1)
+
+
 if __name__ == "__main__":
     xdir = "data"
     if not os.path.exists(xdir):
@@ -102,7 +111,9 @@ if __name__ == "__main__":
     vC = []
     iC = []
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=15) as executor:
+    threading.Thread(target=updateCounter, daemon=True).start()
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         future_to_code = {executor.submit(checker.check_code, checker.generate_code()): checker.generate_code() for _ in range(CA)}
         for future in concurrent.futures.as_completed(future_to_code):
             C, result = future.result()
@@ -114,7 +125,6 @@ if __name__ == "__main__":
             FileHandler.save(C, codes_file)
 
             checked_count += 1
-            TerminalTitleSetter.set_title(f"@0xnyxo Nitro | Checked: {checked_count}")
 
             if result:
                 vC.append(C)
