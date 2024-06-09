@@ -37,3 +37,6 @@ This script automates the process of generating and validating Discord Nitro gif
 ### Usage Notes:
 - Ensure `xCookie` is populated with a valid session cookie.
 - Adjust `max_workers` in `ThreadPoolExecutor` for optimal performance.
+
+### Patched
+This tool may no longer work due to updates or changes made by Discord. Please refer to the repository for any updates or alternatives.
